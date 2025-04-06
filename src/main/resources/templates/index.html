@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обмін валют</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Обмін валют</h1>
+
+    <p>Курс злотих: <span id="pln-rate">...</span></p>
+    <p>Курс євро: <span id="eur-rate">...</span></p>
+
+    <h2>Конвертація</h2>
+    <input type="number" id="amount" placeholder="Сума">
+    <select id="currency">
+        <option value="PLN">PLN</option>
+        <option value="EUR">EUR</option>
+    </select>
+    <button onclick="convertCurrency()">Конвертувати</button>
+
+    <h3>Результат: <span id="result">...</span></h3>
+    <br>
+    <button onclick="downloadExcel()">Скачати звіт</button>
+</div>
+
+<script src="/script.js"></script>
+</body>
+</html>
